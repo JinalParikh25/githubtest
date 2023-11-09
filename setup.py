@@ -7,8 +7,6 @@ setup(
     url='https://github.com/JinalParikh25/githubtest.git',
     license='',
     author='HP',
-
-
     author_email='theparikh303@gmail.com',
     description='analytics and reports'
 )
