@@ -3,16 +3,36 @@ import random
 
 # get Random integer
 def get_random_int(min_number, max_number):
+    """
+       Random integer.
+    """
     return random.randint(min_number, max_number)
 
 
 # get Random math operator
 def get_random_math_operator():
+    """
+        Random operator
+    """
     return random.choice(['+', '-', '*'])
 
 
 # get result
 def get_result(number1, number2, operator):
+    """
+        computer result based on operator [+,-,*]
+
+        Parameters
+        -----
+        number1 : int
+        number2 : int
+        operator[+,-,*]
+
+        Returns
+        -----
+        answer: int
+    """
+
     problem = f"{number1} {operator} {number2}"
     if operator == '+':
         answer = number1 + number2
@@ -24,6 +44,10 @@ def get_result(number1, number2, operator):
 
 
 def math_quiz():
+    """
+        compute number 1, number 2,operator and answer by calling related function.
+        check if answer is correct or wrong. and stop the game.
+    """
     s = 0
     stop = int(3.14159265359)
 
